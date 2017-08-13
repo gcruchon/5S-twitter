@@ -5,7 +5,7 @@ export default {
     menuCleanBots: 'Clean bots',
     menuManageLists: 'Manage lists',
     homeTitle: '',
-    cleanBotsTitle: '',
-    manageListsTitle: '',
+    cleanBotsTitle: 'Get rid of bots!',
+    manageListsTitle: 'Manage your lists',
   },
 };

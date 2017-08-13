@@ -1,7 +1,8 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 const CleanBots = () => (
-  <h1>Get rid of bots!</h1>
+  <h1><FormattedMessage id="cleanBotsTitle" /></h1>
 );
 
 export default CleanBots;
