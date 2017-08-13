@@ -3,8 +3,8 @@ import test from 'ava';
 import sinon from 'sinon';
 import { MemoryRouter } from 'react-router';
 import { shallow } from 'enzyme';
-import { App } from '../App';
-import { mountWithIntl } from '../../../util/react-intl-test-helper';
+import { App, mapStateToProps } from '../App';
+import { mountWithIntl, intl } from '../../../util/react-intl-test-helper';
 
 const children = <h1>Test</h1>;
 const dispatch = sinon.spy();
@@ -34,4 +34,10 @@ test('calls componentDidMount', (t) => {
 
   t.truthy(App.prototype.componentDidMount.calledOnce);
   App.prototype.componentDidMount.restore();
+});
+
+test('mapPropsToState deals with intl', (t) => {
+  const state = { intl };
+  const output = mapStateToProps(state);
+  t.deepEqual(output.intl, intl);
 });
