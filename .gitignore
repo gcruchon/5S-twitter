@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# MERN
+.DS_Store
+.vscode/
+public/*
+dist
