@@ -16,7 +16,7 @@ const Center = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/clean-bots" component={CleanBots} />
           <Route exact path="/manage-lists" component={ManageLists} />
-          <Route component={NoMatch}/>
+          <Route component={NoMatch} />
         </Switch>
       </div>
     </div>
